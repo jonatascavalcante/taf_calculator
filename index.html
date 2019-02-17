@@ -12,16 +12,21 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="topbar">
-				<label for="title">Calculadora TAF 2019</label>
-				<i class="fas fa-heartbeat"></i>
-			</div>
 			
-			<form>
+			
+			<form id="taf_form">
 		    	<ul class="flex-outer">
+
+		    		<div class="topbar">
+						<label for="title">Calculadora TAF 2019</label>
+						<i class="fas fa-heartbeat"></i>
+					</div>
+
+					<br>
+					
 		    		<li>
 				    	<label for="age">Idade</label>
-				    	<input type="number" name="age" placeholder="Digite a sua idade.">
+				    	<input type="number" name="age" id="age"placeholder="Digite a sua idade.">
 			    	</li>
 			    	<li>
 				    	<label for="gender">Sexo </label>
@@ -47,34 +52,34 @@
 
 				   	<li id="running">
 			    		<label for="running">Corrida 2.400m</label>
-			    		<input type="time" name="runningTime" min="00:00" value="00:00">
+			    		<input type="time" id="runningTime" name="runningTime" min="00:00" value="00:00">
 			    	</li>
 			    	<li id="swimming">
 			    		<label for="swimming">Natação 12 minutos</label>
-			    		<input type="number" name="swimmingDistance" placeholder="Digite a distância percorrida (m).">
+			    		<input type="number" id="swimmingDistance" name="swimmingDistance" placeholder="Digite a distância percorrida (m).">
 			    	</li>
 			    	<li>
 			    		<label for="abs">Abdominais</label>
-			    		<input type="number" name="absQtd" placeholder="Digite a quantidade de abdominais.">
+			    		<input type="number" id="absQtd" name="absQtd" placeholder="Digite a quantidade de abdominais.">
 			    	</li>
 			    	<li id="malebars">
 			    		<label for="malebars">Barra Dinâmica</label>
-			    		<input type="number" name="barsQtd" placeholder="Digite a quantidade de barras.">
+			    		<input type="number" id="barsQtd" name="barsQtd" placeholder="Digite a quantidade de barras.">
 			    	</li>
 			    	<li id="femalebars">
 			    		<label for="femalebars">Barra Estática</label>
-			    		<input type="time"name="barsTime" value="00:00">
+			    		<input type="time" id="barsTime" name="barsTime" value="00:00">
 			    	</li>
 			    	<li>
 			    		<label for="fastswimming">Natação 75m</label>
-			    		<input type="time" name="swimmingTime" min="00:00" value="00:00">
+			    		<input type="time" id="swimmingTime" name="swimmingTime" min="00:00" value="00:00">
 			    	</li>
 			    	<li>
 			    		<label for="shuttlerun">Shuttle Run</label>
-			    		<input type="time" name="shuttlerunTime" min="00:00" value="00:00">
+			    		<input type="time" id="shuttlerunTime" name="shuttlerunTime" min="00:00" value="00:00">
 			    	</li>
 			    	<li>
-        				<button type="submit" disabled="true">Calcular</button>
+        				<button type="button" id="btnCalcular">Calcular</button>
       				</li>
 			    </ul>
 		    </form>

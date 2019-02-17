@@ -91,7 +91,7 @@ form {
 	padding: 10px;
 	botder-radius: 2px;
 	font-size: 15px;
-	font-family: "Fira Sans", sans-serif;
+	font-family: "Arial", sans-serif;
 }
 
 .flex-outer li button {
@@ -110,4 +110,4 @@ form {
 .flex-outer li button:disabled {
 	background: #DDDDDD;
 	color: #FFFFFF;
-}	
+}
