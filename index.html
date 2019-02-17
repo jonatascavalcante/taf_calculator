@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset="utf-8">
+	    <title>Calculadora TAF 2019</title>
+	    <meta name="description" content="Calculadora TAF 2019">
+	    <meta name="author" content="Jonatas Cavalcante">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="topbar">
+				<label for="title">Calculadora TAF 2019</label>
+				<i class="fas fa-heartbeat"></i>
+			</div>
+			
+			<form>
+		    	<ul class="flex-outer">
+		    		<li>
+				    	<label for="age">Idade</label>
+				    	<input type="number" name="age" placeholder="Digite a sua idade.">
+			    	</li>
+			    	<li>
+				    	<label for="gender">Sexo </label>
+				    	<div>
+					    	<input type="radio" name="gender" value="male" checked> Masculino
+					    	<input type="radio" name="gender" value="female"> Feminino
+					    </div>
+				   	</li>
+				   	<li>
+				    	<label for="aerobic">Teste Aeróbico </label>
+				    	<div>
+					    	<input type="radio" name="aerobic" value="running" checked> Corrida 2.400m
+					    	<input type="radio" name="aerobic" value="swimming"> Natação 12 minutos
+					    </div>
+				   	</li>
+
+				   	<div class="middlebar">
+						<label for="title">Provas</label>
+						<i class="fas fa-running"></i>
+					</div>
+
+					<br>
+
+				   	<li id="running">
+			    		<label for="running">Corrida 2.400m</label>
+			    		<input type="time" name="runningTime" min="00:00" value="00:00">
+			    	</li>
+			    	<li id="swimming">
+			    		<label for="swimming">Natação 12 minutos</label>
+			    		<input type="number" name="swimmingDistance" placeholder="Digite a distância percorrida (m).">
+			    	</li>
+			    	<li>
+			    		<label for="abs">Abdominais</label>
+			    		<input type="number" name="absQtd" placeholder="Digite a quantidade de abdominais.">
+			    	</li>
+			    	<li id="malebars">
+			    		<label for="malebars">Barra Dinâmica</label>
+			    		<input type="number" name="barsQtd" placeholder="Digite a quantidade de barras.">
+			    	</li>
+			    	<li id="femalebars">
+			    		<label for="femalebars">Barra Estática</label>
+			    		<input type="time"name="barsTime" value="00:00">
+			    	</li>
+			    	<li>
+			    		<label for="fastswimming">Natação 75m</label>
+			    		<input type="time" name="swimmingTime" min="00:00" value="00:00">
+			    	</li>
+			    	<li>
+			    		<label for="shuttlerun">Shuttle Run</label>
+			    		<input type="time" name="shuttlerunTime" min="00:00" value="00:00">
+			    	</li>
+			    	<li>
+        				<button type="submit" disabled="true">Calcular</button>
+      				</li>
+			    </ul>
+		    </form>
+		</div>
+	</body>
+</html>
