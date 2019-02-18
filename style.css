@@ -1,48 +1,35 @@
-@import 
-url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600'); 
 @import
 url('https://fonts.googleapis.com/css?family=Roboto:400,600'); 
 
 body {
-	font: normal 18px/1.5 "Roboto", sans-serif;
   	background: #2D3142;
   	color: #FFFFFF;
 }
 
-form {
-	padding-top: 10px;	
+body, h1 {
+	font: normal 18px/1.5 "Roboto", sans-serif;
+	display: inline;
 }
 
-.topbar {
+.bar {
 	background-color: #C42021;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
-	margin: 0 auto;
-	text-transform: uppercase;
-}
-
-.middlebar {
-	background-color: #C42021;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	margin: 0 auto;
+	width: 100%;
 	text-transform: uppercase;
 }
 
 .container {
 	width: 80%;
 	max-width: 1200px;
+	min-width: 370px;
+	padding: 1rem;
 	margin: 0 auto;
 }
 
 .container * {
 	box-sizing: border-box;
-}
-
-.gender {
-
 }
 
 .flex-outer {
@@ -67,7 +54,7 @@ form {
 
 .flex-outer li label,
 .flex-outer li p {
-	padding: 8px;
+	padding: 5px;
 	font-weight: 300;
 	letter-spacing: .09em;
 	text-transform: uppercase;
@@ -89,7 +76,7 @@ form {
 
 .flex-outer li input {
 	padding: 10px;
-	botder-radius: 2px;
+	border-radius: 2px;
 	font-size: 15px;
 	font-family: "Arial", sans-serif;
 }
@@ -107,7 +94,5 @@ form {
 	font-family: "Roboto", sans-serif;
 }
 
-.flex-outer li button:disabled {
-	background: #DDDDDD;
-	color: #FFFFFF;
+@media (max-width: 800px){
 }

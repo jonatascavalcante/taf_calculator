@@ -41,23 +41,30 @@ $(document).ready(function() {
   		}
 	});
 
+	//Treates the calculate button
 	$("#btnCalcular").click(function() {
 		 if ($("#age").val() && $("#absQtd").val()) {
-		 	if(isSwimming && !isFemale && $("#barsQtd").val() && $("#swimmingDistance").val()) {
+		 	if (isSwimming && !isFemale && $("#barsQtd").val() && $("#swimmingDistance").val()) {
 		 		$("#taf_form").submit();
+		 		return;
 		 	}
-		 	if(isSwimming && isFemale && $("#swimmingDistance").val()) {
+		 	if (isSwimming && isFemale && $("#swimmingDistance").val()) {
 		 		$("#taf_form").submit();
+		 		return;
 		 	}
-		 	if(!isSwimming && !isFemale && $("#barsQtd").val()) {
+		 	if (!isSwimming && !isFemale && $("#barsQtd").val()) {
 		 		$("#taf_form").submit();
+		 		return;
 		 	}
-		 	if(!isSwimming && isFemale) {
+		 	if (!isSwimming && isFemale) {
 		 		$("#taf_form").submit();
+		 		return;
 		 	}
 		 	window.alert("Preencha todos os campos para realizar o cálculo!");
 		 } else {
 		 	window.alert("Preencha todos os campos para realizar o cálculo!");
 		 }
 	});
+
+	
 });
