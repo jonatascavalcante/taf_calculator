@@ -1,5 +1,5 @@
 function criaFuncao(value) {
-	console.log('if (time <= ' + calculaTempo(value[0]) + ') {') +
+	console.log('if (time <= ' + calculaTempo(value[0]) + ') {' +
 	'\n	return 10;' +
 	'\n} else if (time <= ' + calculaTempo(value[1]) + ') {' +
 	'\n	return 9.5;' +
