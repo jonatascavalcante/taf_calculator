@@ -474,145 +474,145 @@ function get_abdominal_fem_34(amount) {
 }
 
 function get_abdominal_fem_39(amount) {
-	if (amount >= 479) {
+	if (amount >= 34) {
 		return 10;
-	} else if (amount >= 454) {
+	} else if (amount >= 31) {
 		return 9.5;
-	} else if (amount >= 430) {
+	} else if (amount >= 29) {
 		return 9;
-	} else if (amount >= 406) {
+	} else if (amount >= 27) {
 		return 8.5;
-	} else if (amount >= 382) {
+	} else if (amount >= 25) {
 		return 8;
-	} else if (amount >= 359) {
+	} else if (amount >= 23) {
 		return 7.5;
-	} else if (amount >= 335) {
+	} else if (amount >= 21) {
 		return 7;
-	} else if (amount >= 311) {
+	} else if (amount >= 19) {
 		return 6.5;
-	} else if (amount >= 287) {
+	} else if (amount >= 16) {
 		return 6;
-	} else if (amount >= 263) {
+	} else if (amount == 15) {
 		return 5.5;
-	} else if (amount >= 239) {
+	} else if (amount == 14) {
 		return 5;
-	} else if (amount >= 215) {
+	} else if (amount >= 12) {
 		return 4.5;
-	} else if (amount >= 191) {
+	} else if (amount >= 10) {
 		return 4;
-	} else if (amount >= 167) {
+	} else if (amount == 9) {
 		return 3.5;
-	} else if (amount >= 143) {
+	} else if (amount == 8) {
 		return 3;
-	} else if (amount < 143) {
+	} else if (amount < 8) {
 		return 0;
 	}
 }
 
 function get_abdominal_fem_44(amount) {
-	if (amount >= 456) {
+	if (amount >= 31) {
 		return 10;
-	} else if (amount >= 433) {
+	} else if (amount >= 29) {
 		return 9.5;
-	} else if (amount >= 410) {
+	} else if (amount >= 27) {
 		return 9;
-	} else if (amount >= 387) {
+	} else if (amount >= 25) {
 		return 8.5;
-	} else if (amount >= 364) {
+	} else if (amount >= 23) {
 		return 8;
-	} else if (amount >= 342) {
+	} else if (amount >= 21) {
 		return 7.5;
-	} else if (amount >= 319) {
+	} else if (amount >= 19) {
 		return 7;
-	} else if (amount >= 296) {
+	} else if (amount >= 17) {
 		return 6.5;
-	} else if (amount >= 273) {
+	} else if (amount >= 15) {
 		return 6;
-	} else if (amount >= 250) {
+	} else if (amount == 14) {
 		return 5.5;
-	} else if (amount >= 228) {
+	} else if (amount == 13) {
 		return 5;
-	} else if (amount >= 205) {
+	} else if (amount >= 11) {
 		return 4.5;
-	} else if (amount >= 182) {
+	} else if (amount >= 9) {
 		return 4;
-	} else if (amount >= 159) {
+	} else if (amount == 8) {
 		return 3.5;
-	} else if (amount >= 136) {
+	} else if (amount == 7) {
 		return 3;
-	} else if (amount < 136) {
+	} else if (amount < 7) {
 		return 0;
 	}
 }
 
 function get_abdominal_fem_49(amount) {
-	if (amount >= 433) {
+	if (amount >= 29) {
 		return 10;
-	} else if (amount >= 411) {
+	} else if (amount >= 27) {
 		return 9.5;
-	} else if (amount >= 389) {
+	} else if (amount >= 25) {
 		return 9;
-	} else if (amount >= 368) {
+	} else if (amount >= 23) {
 		return 8.5;
-	} else if (amount >= 346) {
+	} else if (amount >= 21) {
 		return 8;
-	} else if (amount >= 325) {
+	} else if (amount >= 19) {
 		return 7.5;
-	} else if (amount >= 303) {
+	} else if (amount >= 17) {
 		return 7;
-	} else if (amount >= 281) {
+	} else if (amount == 16) {
 		return 6.5;
-	} else if (amount >= 259) {
+	} else if (amount >= 14) {
 		return 6;
-	} else if (amount >= 238) {
+	} else if (amount == 13) {
 		return 5.5;
-	} else if (amount >= 216) {
+	} else if (amount == 12) {
 		return 5;
-	} else if (amount >= 194) {
+	} else if (amount >= 10) {
 		return 4.5;
-	} else if (amount >= 173) {
+	} else if (amount >= 8) {
 		return 4;
-	} else if (amount >= 151) {
+	} else if (amount == 7) {
 		return 3.5;
-	} else if (amount >= 129) {
+	} else if (amount == 6) {
 		return 3;
-	} else if (amount < 129) {
+	} else if (amount < 6) {
 		return 0;
 	}
 }
 
 function get_abdominal_fem_50(amount) {
-	if (amount >= 411) {
+	if (amount >= 28) {
 		return 10;
-	} else if (amount >= 390) {
+	} else if (amount >= 26) {
 		return 9.5;
-	} else if (amount >= 369) {
+	} else if (amount >= 24) {
 		return 9;
-	} else if (amount >= 349) {
+	} else if (amount >= 22) {
 		return 8.5;
-	} else if (amount >= 328) {
+	} else if (amount >= 20) {
 		return 8;
-	} else if (amount >= 308) {
+	} else if (amount >= 18) {
 		return 7.5;
-	} else if (amount >= 287) {
+	} else if (amount >= 16) {
 		return 7;
-	} else if (amount >= 267) {
+	} else if (amount >= 14) {
 		return 6.5;
-	} else if (amount >= 246) {
+	} else if (amount >= 12) {
 		return 6;
-	} else if (amount >= 226) {
+	} else if (amount == 11) {
 		return 5.5;
-	} else if (amount >= 205) {
+	} else if (amount == 10) {
 		return 5;
-	} else if (amount >= 184) {
+	} else if (amount == 9) {
 		return 4.5;
-	} else if (amount >= 164) {
+	} else if (amount == 8) {
 		return 4;
-	} else if (amount >= 143) {
+	} else if (amount == 7) {
 		return 3.5;
-	} else if (amount >= 123) {
+	} else if (amount == 6) {
 		return 3;
-	} else if (amount < 123) {
+	} else if (amount < 6) {
 		return 0;
 	}
 }
