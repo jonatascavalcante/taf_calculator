@@ -46,3 +46,27 @@ Replace:
 
 Find: ”
 Replace: .
+
+Corrida 2.400 (tempo)
+	- Masc - OK
+	- Fem - OK
+
+Natação 12 minutos (distância)
+	- Masc - OK
+	- Fem - OK
+
+Abdominais (quantidade)
+	- Masc - OK
+	- Fem
+
+Barra
+	- Masc (quantidade)
+	- Fem (tempo)
+
+Natação 75m (tempo)
+	- Masc
+	- Fem
+
+Shuttle Run (tempo)
+	- Masc - OK
+	- Fem
