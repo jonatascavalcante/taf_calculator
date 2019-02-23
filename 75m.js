@@ -1,38 +1,38 @@
 function calculate_75m_score(age, gender, time) {
 	switch(gender) {
 		case 'male':
-			if (age >= 19) {
+			if (age <= 19) {
 				return get_75m_masc_19(time);
-			} else if (age >= 24) {
+			} else if (age <= 24) {
 				return get_75m_masc_24(time);
-			} else if (age >= 29) {
+			} else if (age <= 29) {
 				return get_75m_masc_29(time);
-			} else if (age >= 34) {
+			} else if (age <= 34) {
 				return get_75m_masc_34(time);
-			} else if (age >= 39) {
+			} else if (age <= 39) {
 				return get_75m_masc_39(time);
-			} else if (age >= 44) {
+			} else if (age <= 44) {
 				return get_75m_masc_44(time);
-			} else if (age >= 49) {
+			} else if (age <= 49) {
 				return get_75m_masc_49(time);
 			} else if (age >= 50) {
 				return get_75m_masc_50(time);
 			}
 			break;
 		case 'female':
-			if (age >= 19) {
+			if (age <= 19) {
 				return get_75m_fem_19(time);
-			} else if (age >= 24) {
+			} else if (age <= 24) {
 				return get_75m_fem_24(time);
-			} else if (age >= 29) {
+			} else if (age <= 29) {
 				return get_75m_fem_29(time);
-			} else if (age >= 34) {
+			} else if (age <= 34) {
 				return get_75m_fem_34(time);
-			} else if (age >= 39) {
+			} else if (age <= 39) {
 				return get_75m_fem_39(time);
-			} else if (age >= 44) {
+			} else if (age <= 44) {
 				return get_75m_fem_44(time);
-			} else if (age >= 49) {
+			} else if (age <= 49) {
 				return get_75m_fem_49(time);
 			} else if (age >= 50) {
 				return get_75m_fem_50(time);

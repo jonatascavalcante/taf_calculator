@@ -8,6 +8,7 @@ $(document).ready(function() {
 	//Initially loads the form for the male gender and running set 
 	$("#femalebars").hide();
 	$("#swimming").hide();
+	$("#taf_result").hide();
 
 	//Changes the bars test based on the gender input change
 	$genders.change(function() {
@@ -66,5 +67,75 @@ $(document).ready(function() {
 		 }
 	});
 
-	
+	//Treates the TAF form submission
+	$("#taf_form").submit(function(event) {
+		event.preventDefault();
+		$("#taf_form").hide();
+		$("#taf_result").show();
+
+		var age = $("#age").val();
+		var gender = 'male';
+		var aerobic, bars, tafScore;
+		var barsNote, aerobicNote, absNote, swimNote, shuttleRunNote;
+		var absQtd = $("#absQtd").val();
+		var swimmingTime = $("#swimmingTime").val();
+		var shuttlerunTime = $("#shuttlerunTime").val();
+
+		if(isFemale) {
+			gender = 'female';
+			$("#bars_test").html("Barra Estática");
+			bars = $("#barsTime").val();
+			barsNote = calculate_static_bars_score(age, convertTime(bars));
+			$("#bars_note").html(barsNote);
+
+		} else {
+			$("#bars_test").html("Barra Dinâmica");
+			bars = $("#barsQtd").val();
+			barsNote = calculate_dynamic_bars_score(age, bars)
+			$("#bars_note").html(barsNote);
+		}
+
+		debugger;
+		if(isSwimming) {
+			$("#aerobic_test").html("Natação 12 minutos");
+			aerobic = $("#swimmingDistance").val();
+			aerobicNote = calculate_swimming_score(age, gender, aerobic)
+			$("#aerobic_note").html(aerobicNote);
+		} else {
+			$("#aerobic_test").html("Corrida 2.400m");
+			aerobic = $("#runningTime").val();
+			aerobicNote = calculate_running_score(age, gender, convertTime(aerobic))
+			$("#aerobic_note").html(aerobicNote);
+		}
+		
+		$("#aerobic_exec").html(aerobic);
+		$("#abs_exec").html(absQtd);
+		$("#bars_exec").html(bars);
+		$("#swim_exec").html(swimmingTime);
+		$("#shuttle_run_exec").html(shuttlerunTime);
+		
+		absNote = calculate_abdominal_score(age, gender, absQtd);
+		$("#abs_note").html(absNote);
+		swimNote = calculate_75m_score(age, gender, convertTime(swimmingTime))
+		$("#swim_note").html(swimNote);
+		shuttleRunNote = calculate_shuttle_run_score(age, gender, convertTime(shuttlerunTime))
+		$("#shuttle_run_note").html(shuttleRunNote);
+
+		tafScore = aerobicNote + barsNote + absNote + swimNote + shuttleRunNote;
+		$("#taf_score").html("Nota Final no TAF: " + (tafScore/5));
+	});	
+
+	$("#btnNovoCalculo").click(function() {
+		location.reload();
+	});
 });
+
+function convertTime(time) 
+{
+	var min, sec, convertedTime;
+	min = parseInt(time.split(':')[0]);
+	sec = parseInt(time.split(':')[1]);
+	convertedTime = min * 60 + sec;
+	return convertedTime;
+}
+

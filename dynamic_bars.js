@@ -1,287 +1,235 @@
-function calculate_dynamic_bars_score(age, time) {
+function calculate_dynamic_bars_score(age, amount) {
 	if (age <= 19) {
-		return get_dynamic_bars_19(time);
+		return get_dynamic_bars_19(amount);
 	} else if (age <= 24) {
-		return get_dynamic_bars_24(time);
+		return get_dynamic_bars_24(amount);
 	} else if (age <= 29) {
-		return get_dynamic_bars_29(time);
+		return get_dynamic_bars_29(amount);
 	} else if (age <= 34) {
-		return get_dynamic_bars_34(time);
+		return get_dynamic_bars_34(amount);
 	} else if (age <= 39) {
-		return get_dynamic_bars_39(time);
+		return get_dynamic_bars_39(amount);
 	} else if (age <= 44) {
-		return get_dynamic_bars_44(time);
+		return get_dynamic_bars_44(amount);
 	} else if (age <= 49) {
-		return get_dynamic_bars_49(time);
+		return get_dynamic_bars_49(amount);
 	} else if (age >= 50) {
-		return get_dynamic_bars_50(time);
+		return get_dynamic_bars_50(amount);
 	}
 }
 
-function get_dynamic_bars_19(time) {
-	if (time >= 37) {
+function get_dynamic_bars_19(amount) {
+	if (amount >= 14) {
 		return 10;
-	} else if (time <= 34) {
+	} else if (amount == 13) {
 		return 9.5;
-	} else if (time <= 32) {
+	} else if (amount == 12) {
 		return 9;
-	} else if (time <= 29) {
+	} else if (amount == 11) {
 		return 8.5;
-	} else if (time <= 27) {
+	} else if (amount == 10) {
 		return 8;
-	} else if (time <= 25) {
+	} else if (amount == 9) {
 		return 7.5;
-	} else if (time <= 23) {
+	} else if (amount == 8) {
 		return 7;
-	} else if (time <= 21) {
+	} else if (amount == 7) {
 		return 6.5;
-	} else if (time <= 18) {
+	} else if (amount == 6) {
 		return 6;
-	} else if (time <= 16) {
+	} else if (amount == 5) {
 		return 5.5;
-	} else if (time <= 14) {
+	} else if (amount == 4) {
 		return 5;
-	} else if (time <= 12) {
+	} else if (amount == 3) {
 		return 4.5;
-	} else if (time <= 10) {
+	} else if (amount == 2) {
 		return 4;
-	} else if (time <= 8) {
+	} else if (amount == 1) {
 		return 3.5;
-	} else if (time <= 6) {
-		return 3;
-	} else if (time < 6) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_24(time) {
-	if (time >= 34) {
+function get_dynamic_bars_24(amount) {
+	if (amount >= 13) {
 		return 10;
-	} else if (time <= 31) {
+	} else if (amount == 12) {
 		return 9.5;
-	} else if (time <= 28) {
+	} else if (amount == 11) {
 		return 9;
-	} else if (time <= 25) {
+	} else if (amount == 10) {
 		return 8.5;
-	} else if (time <= 23) {
+	} else if (amount == 9) {
 		return 8;
-	} else if (time <= 21) {
+	} else if (amount == 8) {
 		return 7.5;
-	} else if (time <= 19) {
+	} else if (amount == 7) {
 		return 7;
-	} else if (time <= 17) {
+	} else if (amount == 6) {
 		return 6.5;
-	} else if (time <= 15) {
+	} else if (amount == 5) {
 		return 6;
-	} else if (time <= 13) {
+	} else if (amount == 4) {
 		return 5.5;
-	} else if (time <= 11) {
+	} else if (amount == 3) {
 		return 5;
-	} else if (time <= 9) {
+	} else if (amount == 2) {
 		return 4.5;
-	} else if (time <= 7) {
+	} else if (amount == 1) {
 		return 4;
-	} else if (time <= 5) {
-		return 3.5;
-	} else if (time <= 3) {
-		return 3;
-	} else if (time < 3) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_29(time) {
-	if (time >= 31) {
+function get_dynamic_bars_29(amount) {
+	if (amount >= 12) {
 		return 10;
-	} else if (time <= 28) {
+	} else if (amount == 11) {
 		return 9.5;
-	} else if (time <= 25) {
+	} else if (amount == 10) {
 		return 9;
-	} else if (time <= 22) {
+	} else if (amount == 9) {
 		return 8.5;
-	} else if (time <= 20) {
+	} else if (amount == 8) {
 		return 8;
-	} else if (time <= 18) {
+	} else if (amount == 7) {
 		return 7.5;
-	} else if (time <= 16) {
+	} else if (amount == 6) {
 		return 7;
-	} else if (time <= 14) {
+	} else if (amount == 5) {
 		return 6.5;
-	} else if (time <= 12) {
+	} else if (amount == 4) {
 		return 6;
-	} else if (time <= 10) {
+	} else if (amount == 3) {
 		return 5.5;
-	} else if (time <= 8) {
+	} else if (amount == 2) {
 		return 5;
-	} else if (time <= 6) {
+	} else if (amount == 1) {
 		return 4.5;
-	} else if (time <= 4) {
-		return 4;
-	} else if (time <= 2) {
-		return 3.5;
-	} else if (time <= 1) {
-		return 3;
-	} else if (time < 1) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_34(time) {
-	if (time >= 28) {
+function get_dynamic_bars_34(amount) {
+	if (amount >= 11) {
 		return 10;
-	} else if (time <= 25) {
+	} else if (amount == 10) {
 		return 9.5;
-	} else if (time <= 22) {
+	} else if (amount == 9) {
 		return 9;
-	} else if (time <= 19) {
+	} else if (amount == 8) {
 		return 8.5;
-	} else if (time <= 17) {
+	} else if (amount == 7) {
 		return 8;
-	} else if (time <= 15) {
+	} else if (amount == 6) {
 		return 7.5;
-	} else if (time <= 13) {
+	} else if (amount == 5) {
 		return 7;
-	} else if (time <= 11) {
+	} else if (amount == 4) {
 		return 6.5;
-	} else if (time <= 9) {
+	} else if (amount == 3) {
 		return 6;
-	} else if (time <= 7) {
+	} else if (amount == 2) {
 		return 5.5;
-	} else if (time <= 5) {
+	} else if (amount == 1) {
 		return 5;
-	} else if (time == 4) {
-		return 4.5;
-	} else if (time == 3) {
-		return 4;
-	} else if (time == 2) {
-		return 3.5;
-	} else if (time == 1) {
-		return 3;
-	} else if (time < 1) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_39(time) {
-	if (time >= 25) {
+function get_dynamic_bars_39(amount) {
+	if (amount >= 10) {
 		return 10;
-	} else if (time <= 22) {
+	} else if (amount == 9) {
 		return 9.5;
-	} else if (time <= 19) {
+	} else if (amount == 8) {
 		return 9;
-	} else if (time <= 16) {
+	} else if (amount == 7) {
 		return 8.5;
-	} else if (time <= 14) {
+	} else if (amount == 6) {
 		return 8;
-	} else if (time <= 12) {
+	} else if (amount == 5) {
 		return 7.5;
-	} else if (time <= 10) {
+	} else if (amount == 4) {
 		return 7;
-	} else if (time <= 8) {
+	} else if (amount == 3) {
 		return 6.5;
-	} else if (time <= 6) {
+	} else if (amount == 2) {
 		return 6;
-	} else if (time == 5) {
+	} else if (amount == 1) {
 		return 5.5;
-	} else if (time == 4) {
-		return 5;
-	} else if (time == 3) {
-		return 4.5;
-	} else if (time == 2) {
-		return 4;
-	} else if (time == 1) {
-		return 3.5;
-	} else if (time < 1) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_44(time) {
-	if (time >= 22) {
+function get_dynamic_bars_44(amount) {
+	if (amount >= 9) {
 		return 10;
-	} else if (time <= 19) {
+	} else if (amount == 8) {
 		return 9.5;
-	} else if (time <= 16) {
+	} else if (amount == 7) {
 		return 9;
-	} else if (time <= 13) {
+	} else if (amount == 6) {
 		return 8.5;
-	} else if (time <= 11) {
+	} else if (amount == 5) {
 		return 8;
-	} else if (time <= 9) {
+	} else if (amount == 4) {
 		return 7.5;
-	} else if (time <= 7) {
+	} else if (amount == 3) {
 		return 7;
-	} else if (time == 6) {
+	} else if (amount == 2) {
 		return 6.5;
-	} else if (time == 5) {
+	} else if (amount == 1) {
 		return 6;
-	} else if (time == 4) {
-		return 5.5;
-	} else if (time == 3) {
-		return 5;
-	} else if (time == 2) {
-		return 4.5;
-	} else if (time == 1) {
-		return 4;
-	} else if (time < 1) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_49(time) {
-	if (time >= 19) {
+function get_dynamic_bars_49(amount) {
+	if (amount >= 8) {
 		return 10;
-	} else if (time <= 16) {
+	} else if (amount == 7) {
 		return 9.5;
-	} else if (time <= 13) {
+	} else if (amount == 6) {
 		return 9;
-	} else if (time <= 10) {
+	} else if (amount == 5) {
 		return 8.5;
-	} else if (time <= 8) {
+	} else if (amount == 4) {
 		return 8;
-	} else if (time == 7) {
+	} else if (amount == 3) {
 		return 7.5;
-	} else if (time == 6) {
+	} else if (amount == 2) {
 		return 7;
-	} else if (time == 5) {
+	} else if (amount == 1) {
 		return 6.5;
-	} else if (time == 4) {
-		return 6;
-	} else if (time == 3) {
-		return 5.5;
-	} else if (time == 2) {
-		return 5;
-	} else if (time == 1) {
-		return 4.5;
-	} else if (time < 1) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }
 
-function get_dynamic_bars_50(time) {
-	if (time >= 16) {
+function get_dynamic_bars_50(amount) {
+	if (amount >= 7) {
 		return 10;
-	} else if (time <= 13) {
+	} else if (amount == 6) {
 		return 9.5;
-	} else if (time <= 10) {
+	} else if (amount == 5) {
 		return 9;
-	} else if (time <= 8) {
+	} else if (amount == 4) {
 		return 8.5;
-	} else if (time == 7) {
+	} else if (amount == 3) {
 		return 8;
-	} else if (time == 6) {
+	} else if (amount == 2) {
 		return 7.5;
-	} else if (time == 5) {
+	} else if (amount == 1) {
 		return 7;
-	} else if (time == 4) {
-		return 6.5;
-	} else if (time == 3) {
-		return 6;
-	} else if (time == 2) {
-		return 5.5;
-	} else if (time == 1) {
-		return 5;
-	} else if (time < 1) {
+	} else if (amount < 1) {
 		return 0;
 	}
 }

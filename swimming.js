@@ -1,38 +1,38 @@
 function calculate_swimming_score(age, gender, distance) {
 	switch(gender) {
 		case 'male':
-			if (age >= 19) {
+			if (age <= 19) {
 				return get_swimming_masc_19(distance);
-			} else if (age >= 24) {
+			} else if (age <= 24) {
 				return get_swimming_masc_24(distance);
-			} else if (age >= 29) {
+			} else if (age <= 29) {
 				return get_swimming_masc_29(distance);
-			} else if (age >= 34) {
+			} else if (age <= 34) {
 				return get_swimming_masc_34(distance);
-			} else if (age >= 39) {
+			} else if (age <= 39) {
 				return get_swimming_masc_39(distance);
-			} else if (age >= 44) {
+			} else if (age <= 44) {
 				return get_swimming_masc_44(distance);
-			} else if (age >= 49) {
+			} else if (age <= 49) {
 				return get_swimming_masc_49(distance);
 			} else if (age >= 50) {
 				return get_swimming_masc_50(distance);
 			}
 			break;
 		case 'female':
-			if (age >= 19) {
+			if (age <= 19) {
 				return get_swimming_fem_19(distance);
-			} else if (age >= 24) {
+			} else if (age <= 24) {
 				return get_swimming_fem_24(distance);
-			} else if (age >= 29) {
+			} else if (age <= 29) {
 				return get_swimming_fem_29(distance);
-			} else if (age >= 34) {
+			} else if (age <= 34) {
 				return get_swimming_fem_34(distance);
-			} else if (age >= 39) {
+			} else if (age <= 39) {
 				return get_swimming_fem_39(distance);
-			} else if (age >= 44) {
+			} else if (age <= 44) {
 				return get_swimming_fem_44(distance);
-			} else if (age >= 49) {
+			} else if (age <= 49) {
 				return get_swimming_fem_49(distance);
 			} else if (age >= 50) {
 				return get_swimming_fem_50(distance);
