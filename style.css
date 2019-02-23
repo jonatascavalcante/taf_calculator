@@ -104,16 +104,16 @@ thead, .test-name {
 
 table {
 	padding-top: 10px;
-	width: 80%;
-	margin-left:10%; 
-    margin-right:10%;
+	width: 90%;
+	margin-left:5%; 
+    margin-right:5%;
     margin-top: 10px;
     letter-spacing: 1px;
     border-collapse: collapse;
 }
 
 table, tr, td {
-  border: 2px solid rgb(200, 200, 200);
+  border-bottom: 1px solid #ddd;
 }
 
 td {
