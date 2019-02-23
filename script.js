@@ -85,7 +85,7 @@ $(document).ready(function() {
 			gender = 'female';
 			$("#bars_test").html("Barra Estática");
 			bars = $("#barsTime").val();
-			barsNote = calculate_static_bars_score(age, convertTime(bars));
+			barsNote = calculate_static_bars_score(age, convertTime(bars, 60));
 			$("#bars_note").html(barsNote);
 
 		} else {
@@ -104,7 +104,7 @@ $(document).ready(function() {
 		} else {
 			$("#aerobic_test").html("Corrida 2.400m");
 			aerobic = $("#runningTime").val();
-			aerobicNote = calculate_running_score(age, gender, convertTime(aerobic))
+			aerobicNote = calculate_running_score(age, gender, convertTime(aerobic, 60))
 			$("#aerobic_note").html(aerobicNote);
 		}
 		
@@ -116,9 +116,9 @@ $(document).ready(function() {
 		
 		absNote = calculate_abdominal_score(age, gender, absQtd);
 		$("#abs_note").html(absNote);
-		swimNote = calculate_75m_score(age, gender, convertTime(swimmingTime))
+		swimNote = calculate_75m_score(age, gender, convertTime(swimmingTime, 60))
 		$("#swim_note").html(swimNote);
-		shuttleRunNote = calculate_shuttle_run_score(age, gender, convertTime(shuttlerunTime))
+		shuttleRunNote = calculate_shuttle_run_score(age, gender, convertTime(shuttlerunTime, 100))
 		$("#shuttle_run_note").html(shuttleRunNote);
 
 		tafScore = aerobicNote + barsNote + absNote + swimNote + shuttleRunNote;
@@ -130,12 +130,13 @@ $(document).ready(function() {
 	});
 });
 
-function convertTime(time) 
+function convertTime(time, cons) 
 {
-	var min, sec, convertedTime;
-	min = parseInt(time.split(':')[0]);
-	sec = parseInt(time.split(':')[1]);
-	convertedTime = min * 60 + sec;
+	var firstPart, secondPart, convertedTime;
+	firstPart = parseInt(time.split(':')[0]);
+	secondPart = parseInt(time.split(':')[1]);
+	convertedTime = firstPart * cons + secondPart;
+	debugger;
 	return convertedTime;
 }
 

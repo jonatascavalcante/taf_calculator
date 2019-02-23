@@ -42,578 +42,578 @@ function calculate_shuttle_run_score(age, gender, time) {
 }
 
 function get_shuttle_run_masc_19(time) {
-	if (time <= 572) {
+	if (time <= 892) {
 		return 10;
-	} else if (time <= 548) {
+	} else if (time <= 908) {
 		return 9.5;
-	} else if (time <= 564) {
+	} else if (time <= 924) {
 		return 9;
-	} else if (time <= 580) {
+	} else if (time <= 940) {
 		return 8.5;
-	} else if (time <= 596) {
+	} else if (time <= 956) {
 		return 8;
-	} else if (time <= 612) {
+	} else if (time <= 972) {
 		return 7.5;
-	} else if (time <= 628) {
+	} else if (time <= 988) {
 		return 7;
-	} else if (time <= 603) {
+	} else if (time <= 1003) {
 		return 6.5;
-	} else if (time <= 619) {
+	} else if (time <= 1019) {
 		return 6;
-	} else if (time <= 635) {
+	} else if (time <= 1035) {
 		return 5.5;
-	} else if (time <= 651) {
+	} else if (time <= 1051) {
 		return 5;
-	} else if (time <= 667) {
+	} else if (time <= 1067) {
 		return 4.5;
-	} else if (time <= 683) {
+	} else if (time <= 1083) {
 		return 4;
-	} else if (time <= 699) {
+	} else if (time <= 1099) {
 		return 3.5;
-	} else if (time <= 675) {
+	} else if (time <= 1115) {
 		return 3;
-	} else if (time > 675) {
+	} else if (time > 1115) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_masc_24(time) {
-	if (time <= 547) {
+	if (time <= 907) {
 		return 10;
-	} else if (time <= 563) {
+	} else if (time <= 923) {
 		return 9.5;
-	} else if (time <= 579) {
+	} else if (time <= 939) {
 		return 9;
-	} else if (time <= 595) {
+	} else if (time <= 955) {
 		return 8.5;
-	} else if (time <= 611) {
+	} else if (time <= 971) {
 		return 8;
-	} else if (time <= 627) {
+	} else if (time <= 987) {
 		return 7.5;
-	} else if (time <= 603) {
+	} else if (time <= 1003) {
 		return 7;
-	} else if (time <= 619) {
+	} else if (time <= 1019) {
 		return 6.5;
-	} else if (time <= 635) {
+	} else if (time <= 1035) {
 		return 6;
-	} else if (time <= 651) {
+	} else if (time <= 1051) {
 		return 5.5;
-	} else if (time <= 667) {
+	} else if (time <= 1067) {
 		return 5;
-	} else if (time <= 683) {
+	} else if (time <= 1083) {
 		return 4.5;
-	} else if (time <= 699) {
+	} else if (time <= 1099) {
 		return 4;
-	} else if (time <= 675) {
+	} else if (time <= 1115) {
 		return 3.5;
-	} else if (time <= 691) {
+	} else if (time <= 1131) {
 		return 3;
-	} else if (time > 691) {
+	} else if (time > 1131) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_masc_29(time) {
-	if (time <= 563) {
+	if (time <= 923) {
 		return 10;
-	} else if (time <= 579) {
+	} else if (time <= 939) {
 		return 9.5;
-	} else if (time <= 595) {
+	} else if (time <= 955) {
 		return 9;
-	} else if (time <= 611) {
+	} else if (time <= 971) {
 		return 8.5;
-	} else if (time <= 627) {
+	} else if (time <= 987) {
 		return 8;
-	} else if (time <= 619) {
+	} else if (time <= 1003) {
 		return 7.5;
-	} else if (time <= 635) {
+	} else if (time <= 1019) {
 		return 7;
-	} else if (time <= 651) {
+	} else if (time <= 1035) {
 		return 6.5;
-	} else if (time <= 667) {
+	} else if (time <= 1051) {
 		return 6;
-	} else if (time <= 683) {
+	} else if (time <= 1067) {
 		return 5.5;
-	} else if (time <= 699) {
+	} else if (time <= 1083) {
 		return 5;
-	} else if (time <= 675) {
+	} else if (time <= 1099) {
 		return 4.5;
-	} else if (time <= 691) {
+	} else if (time <= 1115) {
 		return 4;
-	} else if (time <= 707) {
+	} else if (time <= 1131) {
 		return 3.5;
-	} else if (time <= 707) {
+	} else if (time <= 1147) {
 		return 3;
-	} else if (time > 707) {
+	} else if (time > 1147) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_masc_34(time) {
-	if (time <= 578) {
+	if (time <= 938) {
 		return 10;
-	} else if (time <= 594) {
+	} else if (time <= 954) {
 		return 9.5;
-	} else if (time <= 610) {
+	} else if (time <= 970) {
 		return 9;
-	} else if (time <= 626) {
+	} else if (time <= 986) {
 		return 8.5;
-	} else if (time <= 602) {
+	} else if (time <= 1002) {
 		return 8;
-	} else if (time <= 618) {
+	} else if (time <= 1018) {
 		return 7.5;
-	} else if (time <= 634) {
+	} else if (time <= 1034) {
 		return 7;
-	} else if (time <= 650) {
+	} else if (time <= 1050) {
 		return 6.5;
-	} else if (time <= 666) {
+	} else if (time <= 1066) {
 		return 6;
-	} else if (time <= 682) {
+	} else if (time <= 1082) {
 		return 5.5;
-	} else if (time <= 698) {
+	} else if (time <= 1098) {
 		return 5;
-	} else if (time <= 674) {
+	} else if (time <= 1114) {
 		return 4.5;
-	} else if (time <= 690) {
+	} else if (time <= 1130) {
 		return 4;
-	} else if (time <= 706) {
+	} else if (time <= 1146) {
 		return 3.5;
-	} else if (time <= 722) {
+	} else if (time <= 1162) {
 		return 3;
-	} else if (time > 722) {
+	} else if (time > 1162) {
 		return 0;
 	}	
 }
 
 function get_shuttle_run_masc_39(time) {
-	if (time <= 593) {
+	if (time <= 953) {
 		return 10;
-	} else if (time <= 609) {
+	} else if (time <= 969) {
 		return 9.5;
-	} else if (time <= 625) {
+	} else if (time <= 985) {
 		return 9;
-	} else if (time <= 601) {
+	} else if (time <= 1001) {
 		return 8.5;
-	} else if (time <= 617) {
+	} else if (time <= 1017) {
 		return 8;
-	} else if (time <= 633) {
+	} else if (time <= 1033) {
 		return 7.5;
-	} else if (time <= 649) {
+	} else if (time <= 1049) {
 		return 7;
-	} else if (time <= 665) {
+	} else if (time <= 1065) {
 		return 6.5;
-	} else if (time <= 681) {
+	} else if (time <= 1081) {
 		return 6;
-	} else if (time <= 697) {
+	} else if (time <= 1097) {
 		return 5.5;
-	} else if (time <= 673) {
+	} else if (time <= 1113) {
 		return 5;
-	} else if (time <= 689) {
+	} else if (time <= 1129) {
 		return 4.5;
-	} else if (time <= 705) {
+	} else if (time <= 1145) {
 		return 4;
-	} else if (time <= 721) {
+	} else if (time <= 1161) {
 		return 3.5;
-	} else if (time <= 737) {
+	} else if (time <= 1177) {
 		return 3;
-	} else if (time > 737) {
+	} else if (time > 1177) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_masc_44(time) {
-	if (time <= 608) {
+	if (time <= 968) {
 		return 10;
-	} else if (time <= 624) {
+	} else if (time <= 984) {
 		return 9.5;
-	} else if (time <= 600) {
+	} else if (time <= 1000) {
 		return 9;
-	} else if (time <= 616) {
+	} else if (time <= 1016) {
 		return 8.5;
-	} else if (time <= 632) {
+	} else if (time <= 1032) {
 		return 8;
-	} else if (time <= 648) {
+	} else if (time <= 1048) {
 		return 7.5;
-	} else if (time <= 664) {
+	} else if (time <= 1064) {
 		return 7;
-	} else if (time <= 680) {
+	} else if (time <= 1080) {
 		return 6.5;
-	} else if (time <= 696) {
+	} else if (time <= 1096) {
 		return 6;
-	} else if (time <= 672) {
+	} else if (time <= 1112) {
 		return 5.5;
-	} else if (time <= 688) {
+	} else if (time <= 1128) {
 		return 5;
-	} else if (time <= 704) {
+	} else if (time <= 1144) {
 		return 4.5;
-	} else if (time <= 719) {
+	} else if (time <= 1159) {
 		return 4;
-	} else if (time <= 735) {
+	} else if (time <= 1175) {
 		return 3.5;
-	} else if (time <= 751) {
+	} else if (time <= 1191) {
 		return 3;
-	} else if (time > 751) {
+	} else if (time > 1191) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_masc_49(time) {
-	if (time <= 623) {
+	if (time <= 983) {
 		return 10;
-	} else if (time <= 639) {
+	} else if (time <= 999) {
 		return 9.5;
-	} else if (time <= 615) {
+	} else if (time <= 1015) {
 		return 9;
-	} else if (time <= 631) {
+	} else if (time <= 1031) {
 		return 8.5;
-	} else if (time <= 647) {
+	} else if (time <= 1047) {
 		return 8;
-	} else if (time <= 663) {
+	} else if (time <= 1063) {
 		return 7.5;
-	} else if (time <= 679) {
+	} else if (time <= 1079) {
 		return 7;
-	} else if (time <= 695) {
+	} else if (time <= 1095) {
 		return 6.5;
-	} else if (time <= 671) {
+	} else if (time <= 1111) {
 		return 6;
-	} else if (time <= 687) {
+	} else if (time <= 1127) {
 		return 5.5;
-	} else if (time <= 703) {
+	} else if (time <= 1143) {
 		return 5;
-	} else if (time <= 719) {
+	} else if (time <= 1159) {
 		return 4.5;
-	} else if (time <= 735) {
+	} else if (time <= 1175) {
 		return 4;
-	} else if (time <= 751) {
+	} else if (time <= 1191) {
 		return 3.5;
-	} else if (time <= 727) {
+	} else if (time <= 1207) {
 		return 3;
-	} else if (time > 727) {
+	} else if (time > 1207) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_masc_50(time) {
-	if (time <= 636) {
+	if (time <= 996) {
 		return 10;
-	} else if (time <= 612) {
+	} else if (time <= 1012) {
 		return 9.5;
-	} else if (time <= 628) {
+	} else if (time <= 1028) {
 		return 9;
-	} else if (time <= 644) {
+	} else if (time <= 1044) {
 		return 8.5;
-	} else if (time <= 660) {
+	} else if (time <= 1060) {
 		return 8;
-	} else if (time <= 676) {
+	} else if (time <= 1076) {
 		return 7.5;
-	} else if (time <= 692) {
+	} else if (time <= 1092) {
 		return 7;
-	} else if (time <= 668) {
+	} else if (time <= 1108) {
 		return 6.5;
-	} else if (time <= 684) {
+	} else if (time <= 1124) {
 		return 6;
-	} else if (time <= 700) {
+	} else if (time <= 1140) {
 		return 5.5;
-	} else if (time <= 716) {
+	} else if (time <= 1156) {
 		return 5;
-	} else if (time <= 732) {
+	} else if (time <= 1172) {
 		return 4.5;
-	} else if (time <= 748) {
+	} else if (time <= 1188) {
 		return 4;
-	} else if (time <= 724) {
+	} else if (time <= 1204) {
 		return 3.5;
-	} else if (time <= 740) {
+	} else if (time <= 1220) {
 		return 3;
-	} else if (time > 740) {
+	} else if (time > 1220) {
 		return 0;
 	}
 }
 
 
 function get_shuttle_run_fem_19(time) {
-	if (time <= 612) {
+	if (time <= 1012) {
 		return 10;
-	} else if (time <= 628) {
+	} else if (time <= 1028) {
 		return 9.5;
-	} else if (time <= 644) {
+	} else if (time <= 1044) {
 		return 9;
-	} else if (time <= 660) {
+	} else if (time <= 1060) {
 		return 8.5;
-	} else if (time <= 676) {
+	} else if (time <= 1076) {
 		return 8;
-	} else if (time <= 692) {
+	} else if (time <= 1092) {
 		return 7.5;
-	} else if (time <= 668) {
+	} else if (time <= 1108) {
 		return 7;
-	} else if (time <= 684) {
+	} else if (time <= 1124) {
 		return 6.5;
-	} else if (time <= 700) {
+	} else if (time <= 1140) {
 		return 6;
-	} else if (time <= 716) {
+	} else if (time <= 1156) {
 		return 5.5;
-	} else if (time <= 732) {
+	} else if (time <= 1172) {
 		return 5;
-	} else if (time <= 748) {
+	} else if (time <= 1188) {
 		return 4.5;
-	} else if (time <= 724) {
+	} else if (time <= 1204) {
 		return 4;
-	} else if (time <= 740) {
+	} else if (time <= 1220) {
 		return 3.5;
-	} else if (time <= 756) {
+	} else if (time <= 1236) {
 		return 3;
-	} else if (time > 756) {
+	} else if (time > 1236) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_24(time) {
-	if (time <= 622) {
+	if (time <= 1022) {
 		return 10;
-	} else if (time <= 638) {
+	} else if (time <= 1038) {
 		return 9.5;
-	} else if (time <= 654) {
+	} else if (time <= 1054) {
 		return 9;
-	} else if (time <= 670) {
+	} else if (time <= 1070) {
 		return 8.5;
-	} else if (time <= 686) {
+	} else if (time <= 1086) {
 		return 8;
-	} else if (time <= 662) {
+	} else if (time <= 1102) {
 		return 7.5;
-	} else if (time <= 678) {
+	} else if (time <= 1118) {
 		return 7;
-	} else if (time <= 694) {
+	} else if (time <= 1134) {
 		return 6.5;
-	} else if (time <= 710) {
+	} else if (time <= 1150) {
 		return 6;
-	} else if (time <= 726) {
+	} else if (time <= 1166) {
 		return 5.5;
-	} else if (time <= 742) {
+	} else if (time <= 1182) {
 		return 5;
-	} else if (time <= 758) {
+	} else if (time <= 1198) {
 		return 4.5;
-	} else if (time <= 734) {
+	} else if (time <= 1214) {
 		return 4;
-	} else if (time <= 750) {
+	} else if (time <= 1230) {
 		return 3.5;
-	} else if (time <= 766) {
+	} else if (time <= 1246) {
 		return 3;
-	} else if (time > 766) {
+	} else if (time > 1246) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_29(time) {
-	if (time <= 648) {
+	if (time <= 1048) {
 		return 10;
-	} else if (time <= 664) {
+	} else if (time <= 1064) {
 		return 9.5;
-	} else if (time <= 680) {
+	} else if (time <= 1080) {
 		return 9;
-	} else if (time <= 696) {
+	} else if (time <= 1096) {
 		return 8.5;
-	} else if (time <= 672) {
+	} else if (time <= 1112) {
 		return 8;
-	} else if (time <= 688) {
+	} else if (time <= 1128) {
 		return 7.5;
-	} else if (time <= 704) {
+	} else if (time <= 1144) {
 		return 7;
-	} else if (time <= 720) {
+	} else if (time <= 1160) {
 		return 6.5;
-	} else if (time <= 736) {
+	} else if (time <= 1176) {
 		return 6;
-	} else if (time <= 752) {
+	} else if (time <= 1192) {
 		return 5.5;
-	} else if (time <= 728) {
+	} else if (time <= 1208) {
 		return 5;
-	} else if (time <= 744) {
+	} else if (time <= 1224) {
 		return 4.5;
-	} else if (time <= 760) {
+	} else if (time <= 1240) {
 		return 4;
-	} else if (time <= 776) {
+	} else if (time <= 1256) {
 		return 3.5;
-	} else if (time <= 792) {
+	} else if (time <= 1272) {
 		return 3;
-	} else if (time > 792) {
+	} else if (time > 1272) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_34(time) {
-	if (time <= 674) {
+	if (time <= 1074) {
 		return 10;
-	} else if (time <= 690) {
+	} else if (time <= 1090) {
 		return 9.5;
-	} else if (time <= 666) {
+	} else if (time <= 1106) {
 		return 9;
-	} else if (time <= 682) {
+	} else if (time <= 1122) {
 		return 8.5;
-	} else if (time <= 698) {
+	} else if (time <= 1138) {
 		return 8;
-	} else if (time <= 714) {
+	} else if (time <= 1154) {
 		return 7.5;
-	} else if (time <= 730) {
+	} else if (time <= 1170) {
 		return 7;
-	} else if (time <= 746) {
+	} else if (time <= 1186) {
 		return 6.5;
-	} else if (time <= 722) {
+	} else if (time <= 1202) {
 		return 6;
-	} else if (time <= 738) {
+	} else if (time <= 1218) {
 		return 5.5;
-	} else if (time <= 754) {
+	} else if (time <= 1234) {
 		return 5;
-	} else if (time <= 770) {
+	} else if (time <= 1250) {
 		return 4.5;
-	} else if (time <= 786) {
+	} else if (time <= 1266) {
 		return 4;
-	} else if (time <= 802) {
+	} else if (time <= 1282) {
 		return 3.5;
-	} else if (time <= 818) {
+	} else if (time <= 1298) {
 		return 3;
-	} else if (time > 818) {
+	} else if (time > 1298) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_39(time) {
-	if (time <= 699) {
+	if (time <= 1099) {
 		return 10;
-	} else if (time <= 675) {
+	} else if (time <= 1105) {
 		return 9.5;
-	} else if (time <= 691) {
+	} else if (time <= 1131) {
 		return 9;
-	} else if (time <= 707) {
+	} else if (time <= 1147) {
 		return 8.5;
-	} else if (time <= 723) {
+	} else if (time <= 1163) {
 		return 8;
-	} else if (time <= 739) {
+	} else if (time <= 1179) {
 		return 7.5;
-	} else if (time <= 755) {
+	} else if (time <= 1195) {
 		return 7;
-	} else if (time <= 731) {
+	} else if (time <= 1211) {
 		return 6.5;
-	} else if (time <= 747) {
+	} else if (time <= 1227) {
 		return 6;
-	} else if (time <= 763) {
+	} else if (time <= 1243) {
 		return 5.5;
-	} else if (time <= 779) {
+	} else if (time <= 1259) {
 		return 5;
-	} else if (time <= 795) {
+	} else if (time <= 1275) {
 		return 4.5;
-	} else if (time <= 811) {
+	} else if (time <= 1291) {
 		return 4;
-	} else if (time <= 787) {
+	} else if (time <= 1307) {
 		return 3.5;
-	} else if (time <= 803) {
+	} else if (time <= 1323) {
 		return 3;
-	} else if (time > 803) {
+	} else if (time > 1323) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_44(time) {
-	if (time <= 685) {
+	if (time <= 1125) {
 		return 10;
-	} else if (time <= 701) {
+	} else if (time <= 1141) {
 		return 9.5;
-	} else if (time <= 717) {
+	} else if (time <= 1157) {
 		return 9;
-	} else if (time <= 733) {
+	} else if (time <= 1173) {
 		return 8.5;
-	} else if (time <= 749) {
+	} else if (time <= 1189) {
 		return 8;
-	} else if (time <= 725) {
+	} else if (time <= 1205) {
 		return 7.5;
-	} else if (time <= 741) {
+	} else if (time <= 1221) {
 		return 7;
-	} else if (time <= 757) {
+	} else if (time <= 1237) {
 		return 6.5;
-	} else if (time <= 773) {
+	} else if (time <= 1253) {
 		return 6;
-	} else if (time <= 789) {
+	} else if (time <= 1269) {
 		return 5.5;
-	} else if (time <= 805) {
+	} else if (time <= 1285) {
 		return 5;
-	} else if (time <= 781) {
+	} else if (time <= 1301) {
 		return 4.5;
-	} else if (time <= 797) {
+	} else if (time <= 1317) {
 		return 4;
-	} else if (time <= 813) {
+	} else if (time <= 1333) {
 		return 3.5;
-	} else if (time <= 829) {
+	} else if (time <= 1349) {
 		return 3;
-	} else if (time > 829) {
+	} else if (time > 1349) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_49(time) {
-	if (time <= 710) {
+	if (time <= 1150) {
 		return 10;
-	} else if (time <= 726) {
+	} else if (time <= 1166) {
 		return 9.5;
-	} else if (time <= 742) {
+	} else if (time <= 1182) {
 		return 9;
-	} else if (time <= 758) {
+	} else if (time <= 1198) {
 		return 8.5;
-	} else if (time <= 734) {
+	} else if (time <= 1214) {
 		return 8;
-	} else if (time <= 750) {
+	} else if (time <= 1230) {
 		return 7.5;
-	} else if (time <= 766) {
+	} else if (time <= 1246) {
 		return 7;
-	} else if (time <= 782) {
+	} else if (time <= 1262) {
 		return 6.5;
-	} else if (time <= 798) {
+	} else if (time <= 1278) {
 		return 6;
-	} else if (time <= 814) {
+	} else if (time <= 1294) {
 		return 5.5;
-	} else if (time <= 790) {
+	} else if (time <= 1310) {
 		return 5;
-	} else if (time <= 806) {
+	} else if (time <= 1326) {
 		return 4.5;
-	} else if (time <= 822) {
+	} else if (time <= 1342) {
 		return 4;
-	} else if (time <= 838) {
+	} else if (time <= 1358) {
 		return 3.5;
-	} else if (time <= 854) {
+	} else if (time <= 1374) {
 		return 3;
-	} else if (time > 854) {
+	} else if (time > 1374) {
 		return 0;
 	}
 }
 
 function get_shuttle_run_fem_50(time) {
-	if (time <= 736) {
+	if (time <= 1176) {
 		return 10;
-	} else if (time <= 752) {
+	} else if (time <= 1192) {
 		return 9.5;
-	} else if (time <= 728) {
+	} else if (time <= 1208) {
 		return 9;
-	} else if (time <= 744) {
+	} else if (time <= 1224) {
 		return 8.5;
-	} else if (time <= 760) {
+	} else if (time <= 1240) {
 		return 8;
-	} else if (time <= 776) {
+	} else if (time <= 1256) {
 		return 7.5;
-	} else if (time <= 792) {
+	} else if (time <= 1272) {
 		return 7;
-	} else if (time <= 808) {
+	} else if (time <= 1288) {
 		return 6.5;
-	} else if (time <= 784) {
+	} else if (time <= 1304) {
 		return 6;
-	} else if (time <= 800) {
+	} else if (time <= 1320) {
 		return 5.5;
-	} else if (time <= 816) {
+	} else if (time <= 1336) {
 		return 5;
-	} else if (time <= 832) {
+	} else if (time <= 1352) {
 		return 4.5;
-	} else if (time <= 848) {
+	} else if (time <= 1368) {
 		return 4;
-	} else if (time <= 864) {
+	} else if (time <= 1384) {
 		return 3.5;
-	} else if (time <= 840) {
+	} else if (time <= 1400) {
 		return 3;
-	} else if (time > 840) {
+	} else if (time > 1400) {
 		return 0;
 	}
 }
