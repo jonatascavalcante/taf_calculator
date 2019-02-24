@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 	//Treates the calculate button
 	$("#btnCalcular").click(function() {
-		 if ($("#age").val() && $("#absQtd").val()) {
+		 if ($("#age").val() && $("#absQtd").val() && $("#shuttlerunTime").val()) {
 		 	if (isSwimming && !isFemale && $("#barsQtd").val() && $("#swimmingDistance").val()) {
 		 		$("#taf_form").submit();
 		 		return;
