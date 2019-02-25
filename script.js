@@ -95,7 +95,6 @@ $(document).ready(function() {
 			$("#bars_note").html(barsNote);
 		}
 
-		debugger;
 		if(isSwimming) {
 			$("#aerobic_test").html("Natação 12 minutos");
 			aerobic = $("#swimmingDistance").val();
