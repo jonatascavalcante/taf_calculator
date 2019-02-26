@@ -61,9 +61,9 @@ $(document).ready(function() {
 		 		$("#taf_form").submit();
 		 		return;
 		 	}
-		 	window.alert("Preencha todos os campos para realizar o cálculo!");
+		 	window.alert("É necessário preencher todos os campos para realizar o cálculo");
 		 } else {
-		 	window.alert("Preencha todos os campos para realizar o cálculo!");
+		 	window.alert("É necessário preencher todos os campos para realizar o cálculo");
 		 }
 	});
 
@@ -135,7 +135,6 @@ function convertTime(time, cons)
 	firstPart = parseInt(time.split(':')[0]);
 	secondPart = parseInt(time.split(':')[1]);
 	convertedTime = firstPart * cons + secondPart;
-	debugger;
 	return convertedTime;
 }
 
