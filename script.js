@@ -124,6 +124,15 @@ $(document).ready(function() {
 		$("#taf_score").html("Nota Final no TAF: " + (tafScore/5));
 	});	
 
+	$("#shuttlerunTime").blur(function() {
+		var shuttlerunTime = $(this).val();
+		var input;
+		if (shuttlerunTime.length == 4) {
+			input = shuttlerunTime.split(':')[0] + shuttlerunTime.split(':')[1];
+			$(this).val(input[0] + ':' + input[1] + input[2]);
+		}
+	});
+
 	$("#btnNovoCalculo").click(function() {
 		location.reload();
 	});
