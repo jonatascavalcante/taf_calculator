@@ -1,5 +1,4 @@
-@import
-url('https://fonts.googleapis.com/css?family=Roboto:400,600'); 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600')
 
 body {
   	background: #2D3142;
@@ -9,6 +8,13 @@ body {
 body, h1 {
 	font: normal 18px/1.5 "Roboto", sans-serif;
 	display: inline;
+}
+
+footer {
+	font: normal 15px/1.5 "Helvetica Neue", Arial, sans-serif;;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
 }
 
 .bar {
@@ -124,7 +130,4 @@ td {
 .taf-score {
 	text-align: center;
 	font-size: 30px;
-}
-
-@media (max-width: 800px){
 }
