@@ -128,8 +128,10 @@ $(document).ready(function() {
 		var shuttlerunTime = $(this).val();
 		if (shuttlerunTime.length == 1) {
 			if (key.which == 56 || key.which == 57) {
-				$(this).val('0' + shuttlerunTime);
-				$(this).selectionStart = $(this).selectionEnd = $(this).value.length;
+				var newValue = '0' + shuttlerunTime;
+				$(this).focus();
+				$(this).val('');
+				$(this).val(newValue);
 			}
 		}
 	});
