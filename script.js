@@ -124,15 +124,24 @@ $(document).ready(function() {
 		$("#taf_score").html("Nota Final no TAF: " + (tafScore/5));
 	});	
 
-	$("#shuttlerunTime").keyup(function( key ) {
+	// $("#shuttlerunTime").keyup(function( key ) {
+	// 	var shuttlerunTime = $(this).val();
+	// 	if (shuttlerunTime.length == 1) {
+	// 		if (key.which == 56 || key.which == 57) {
+	// 			var newValue = '0' + shuttlerunTime;
+	// 			$(this).focus();
+	// 			$(this).val('');
+	// 			$(this).val(newValue);
+	// 		}
+	// 	}
+	// });
+
+	$("#shuttlerunTime").blur(function() {
 		var shuttlerunTime = $(this).val();
-		if (shuttlerunTime.length == 1) {
-			if (key.which == 56 || key.which == 57) {
-				var newValue = '0' + shuttlerunTime;
-				$(this).focus();
-				$(this).val('');
-				$(this).val(newValue);
-			}
+		var input;
+		if (shuttlerunTime.length == 4) {
+			input = shuttlerunTime.split(':')[0] + shuttlerunTime.split(':')[1];
+			$(this).val(input[0] + ':' + input[1] + input[2]);
 		}
 	});
 
