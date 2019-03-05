@@ -129,6 +129,7 @@ $(document).ready(function() {
 		if (shuttlerunTime.length == 1) {
 			if (key.which == 56 || key.which == 57) {
 				$(this).val('0' + shuttlerunTime);
+				$(this).selectionStart = $(this).selectionEnd = $(this).value.length;
 			}
 		}
 	});
