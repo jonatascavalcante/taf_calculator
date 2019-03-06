@@ -133,9 +133,16 @@ $(document).ready(function() {
 		}
 	});
 
+	$("#btnAlterarDados").click(function() {
+		$("#taf_form").show();
+		$("#taf_result").hide();
+
+	});
+
 	$("#btnNovoCalculo").click(function() {
 		location.reload();
 	});
+
 });
 
 function convertTime(time, cons) 
