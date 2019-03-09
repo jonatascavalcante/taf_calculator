@@ -9,6 +9,7 @@ $(document).ready(function() {
 	$("#femalebars").hide();
 	$("#swimming").hide();
 	$("#taf_result").hide();
+	$("#footer").hide();
 
 	//Changes the bars test based on the gender input change
 	$genders.change(function() {
@@ -122,6 +123,7 @@ $(document).ready(function() {
 
 		tafScore = aerobicNote + barsNote + absNote + swimNote + shuttleRunNote;
 		$("#taf_score").html("Nota Final no TAF: " + (tafScore/5));
+		$("#footer").show();
 	});	
 
 	$("#shuttlerunTime").keyup(function() {
@@ -136,6 +138,7 @@ $(document).ready(function() {
 	$("#btnAlterarDados").click(function() {
 		$("#taf_form").show();
 		$("#taf_result").hide();
+		$("#footer").hide();
 
 	});
 
