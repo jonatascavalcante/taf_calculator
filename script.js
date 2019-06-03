@@ -107,6 +107,10 @@ $(document).ready(function() {
 			aerobicNote = calculate_running_score(age, gender, convertTime(aerobic, 60))
 			$("#aerobic_note").html(aerobicNote);
 		}
+
+		if(shuttlerunTime.length < 3) {
+			shuttlerunTime += ':00';
+		}
 		
 		$("#aerobic_exec").html(aerobic);
 		$("#abs_exec").html(absQtd);
