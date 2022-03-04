@@ -43,30 +43,30 @@ $(document).ready(function() {
   		}
 	});
 
-	//Treates the calculate button
 	$("#btnCalcular").click(function() {
-		 if ($("#age").val() && $("#absQtd").val() && $("#shuttlerunTime").val()) {
-		 	if (isSwimming && !isFemale && $("#barsQtd").val() && $("#swimmingDistance").val()) {
-		 		$("#taf_form").submit();
+		if ($("#age").val()) {
+			if ($("#absQtd").val() || $("#swimmingTime").val() || $("#shuttlerunTime").val()) {
+				$("#taf_form").submit();
 		 		return;
-		 	}
-		 	if (isSwimming && isFemale && $("#swimmingDistance").val()) {
-		 		$("#taf_form").submit();
+			} else if (isSwimming && $("#swimmingDistance").val()) {
+				$("#taf_form").submit();
 		 		return;
-		 	}
-		 	if (!isSwimming && !isFemale && $("#barsQtd").val()) {
-		 		$("#taf_form").submit();
+			} else if (!isSwimming && $("#runningTime").val()) {
+				$("#taf_form").submit();
 		 		return;
-		 	}
-		 	if (!isSwimming && isFemale) {
-		 		$("#taf_form").submit();
+			} else if (isFemale && $("#barsTime").val()) {
+				$("#taf_form").submit();
 		 		return;
-		 	}
-		 	window.alert("É necessário preencher todos os campos para realizar o cálculo");
-		 } else {
-		 	window.alert("É necessário preencher todos os campos para realizar o cálculo");
-		 }
-	});
+			} else if (!isFemale && $("#barsQtd").val()) {
+				$("#taf_form").submit();
+		 		return;
+			} else {
+				window.alert("É necessário preencher pelo menos um campo para realizar o cálculo!");
+			}
+		} else {
+			window.alert("É necessário informar a idade para realizar o cálculo!");
+		}
+	})
 
 	//Treates the TAF form submission
 	$("#taf_form").submit(function(event) {
@@ -77,38 +77,62 @@ $(document).ready(function() {
 		var age = $("#age").val();
 		var gender = 'male';
 		var aerobic, bars, tafScore;
-		var barsNote, aerobicNote, absNote, swimNote, shuttleRunNote;
+		var barsNote = 0, aerobicNote = 0, absNote = 0, swimNote = 0, shuttleRunNote = 0;
 		var absQtd = $("#absQtd").val();
 		var swimmingTime = $("#swimmingTime").val();
 		var shuttlerunTime = $("#shuttlerunTime").val();
+		var exercises = 5;
 
-		if(isFemale) {
+		if (isFemale) {
 			gender = 'female';
 			$("#bars_test").html("Barra Estática");
 			bars = $("#barsTime").val();
-			barsNote = calculate_static_bars_score(age, convertTime(bars, 60));
-			$("#bars_note").html(barsNote);
-
+			if (bars) {
+				barsNote = calculate_static_bars_score(age, bars);
+				$("#bars").show();
+				$("#bars_note").html(barsNote);
+			} else {
+				exercises--;
+				$("#bars").hide();
+			}	
 		} else {
 			$("#bars_test").html("Barra Dinâmica");
 			bars = $("#barsQtd").val();
-			barsNote = calculate_dynamic_bars_score(age, bars)
-			$("#bars_note").html(barsNote);
+			if (bars) {
+				barsNote = calculate_dynamic_bars_score(age, bars);
+				$("#bars").show();
+				$("#bars_note").html(barsNote);
+			} else {
+				exercises--;
+				$("#bars").hide();
+			}
 		}
 
-		if(isSwimming) {
+		if (isSwimming) {
 			$("#aerobic_test").html("Natação 12 minutos");
 			aerobic = $("#swimmingDistance").val();
-			aerobicNote = calculate_swimming_score(age, gender, aerobic)
-			$("#aerobic_note").html(aerobicNote);
+			if (aerobic) {
+				aerobicNote = calculate_swimming_score(age, gender, aerobic);
+				$("#aerobic").show();
+				$("#aerobic_note").html(aerobicNote);
+			} else {
+				exercises--;
+				$("#aerobic").hide();
+			}
 		} else {
 			$("#aerobic_test").html("Corrida 2.400m");
 			aerobic = $("#runningTime").val();
-			aerobicNote = calculate_running_score(age, gender, convertTime(aerobic, 60))
-			$("#aerobic_note").html(aerobicNote);
+			if (aerobic) {
+				aerobicNote = calculate_running_score(age, gender, convertMinuteTime(aerobic));
+				$("#aerobic").show();
+				$("#aerobic_note").html(aerobicNote);
+			} else {
+				exercises--;
+				$("#aerobic").hide();
+			}
 		}
 
-		if(shuttlerunTime.length < 3) {
+		if (shuttlerunTime && shuttlerunTime.length < 3) {
 			shuttlerunTime += ':00';
 		}
 		
@@ -118,24 +142,54 @@ $(document).ready(function() {
 		$("#swim_exec").html(swimmingTime);
 		$("#shuttle_run_exec").html(shuttlerunTime);
 		
-		absNote = calculate_abdominal_score(age, gender, absQtd);
-		$("#abs_note").html(absNote);
-		swimNote = calculate_75m_score(age, gender, convertTime(swimmingTime, 60))
-		$("#swim_note").html(swimNote);
-		shuttleRunNote = calculate_shuttle_run_score(age, gender, convertTime(shuttlerunTime, 100))
-		$("#shuttle_run_note").html(shuttleRunNote);
+		if (absQtd) {
+			absNote = calculate_abdominal_score(age, gender, absQtd);
+			$("#abs").show();
+			$("#abs_note").html(absNote);
+		} else {
+			exercises--;
+			$("#abs").hide();
+		}
 
+		if (swimmingTime) {
+			swimNote = calculate_75m_score(age, gender, convertMinuteTime(swimmingTime));
+			$("#swim").show();
+			$("#swim_note").html(swimNote);
+		} else {
+			exercises--;
+			$("#swim").hide();
+		}
+
+		if (shuttlerunTime) {
+			shuttleRunNote = calculate_shuttle_run_score(age, gender, convertMillesimalTime(shuttlerunTime));
+			$("#shuttle").show();
+			$("#shuttle_run_note").html(shuttleRunNote);
+		} else {
+			exercises--;
+			$("#shuttle").hide();
+		}
+		
 		tafScore = aerobicNote + barsNote + absNote + swimNote + shuttleRunNote;
-		$("#taf_score").html("Nota Final no TAF: " + (tafScore/5));
+		var result = tafScore/exercises;
+		$("#taf_score").html("Nota Final no TAF: " + (result.toFixed(2)));
 		$("#footer").show();
 	});	
+
+	$("#runningTime").keyup(function(e) {
+		var runningTime = $(this).val();
+		var input;
+		if (runningTime.length === 4 && (runningTime[0] == '9' || runningTime[0] == '8') && e.keyCode !== 8) {
+			input = runningTime.split('’')[0] + runningTime.split('’')[1];
+			$(this).val(input[0] + '’' + input[1] + input[2] + '"');
+		}
+	});
 
 	$("#shuttlerunTime").keyup(function() {
 		var shuttlerunTime = $(this).val();
 		var input;
-		if (shuttlerunTime.length == 4 && (shuttlerunTime[0] == '9' || shuttlerunTime[0] == '8')) {
-			input = shuttlerunTime.split(':')[0] + shuttlerunTime.split(':')[1];
-			$(this).val(input[0] + ':' + input[1] + input[2]);
+		if (shuttlerunTime.length === 4 && (shuttlerunTime[0] == '9' || shuttlerunTime[0] == '8')) {
+			input = shuttlerunTime.split('"')[0] + shuttlerunTime.split('"')[1];
+			$(this).val(input[0] + '"' + input[1] + input[2]);
 		}
 	});
 
@@ -147,17 +201,26 @@ $(document).ready(function() {
 	});
 
 	$("#btnNovoCalculo").click(function() {
-		location.reload();
+		document.location.reload(true);
 	});
 
 });
 
-function convertTime(time, cons) 
+function convertMinuteTime(time)
 {
 	var firstPart, secondPart, convertedTime;
-	firstPart = parseInt(time.split(':')[0]);
-	secondPart = parseInt(time.split(':')[1]);
-	convertedTime = firstPart * cons + secondPart;
+	firstPart = parseInt(time.split('’')[0]);
+	secondPart = parseInt((time.split('’')[1]).replace('"', ''));
+	convertedTime = firstPart * 60 + secondPart;
+	return convertedTime;
+}
+
+function convertMillesimalTime(time)
+{
+	var firstPart, secondPart, convertedTime;
+	firstPart = parseInt(time.split('"')[0]);
+	secondPart = parseInt(time.split('"')[1]);
+	convertedTime = firstPart * 100 + secondPart;
 	return convertedTime;
 }
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140682451-2"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -13,10 +12,10 @@
 
 	    <meta charset="utf-8">
 	   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="description" content="Calculadora TAF 2020">
+	    <meta name="description" content="Calculadora TAF">
 	    <meta name="author" content="Jonatas Cavalcante">
 
-	    <title>Calculadora TAF 2020</title>
+	    <title>Calculadora TAF</title>
 
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	    <link rel="stylesheet" type="text/css" href="style.css">
@@ -27,23 +26,23 @@
 		    	<ul class="flex-outer">
 		    		<li>
 		    			<div class="bar">
-							<h1>Calculadora TAF 2020</h1>
+							<h1>Calculadora TAF</h1>
 							<i class="fas fa-heartbeat"></i>
 						</div>
 		    		</li>
 		    		<li>
 				    	<label for="age">Idade</label>
-				    	<input type="number" name="age" id="age"placeholder="Idade">
+				    	<input type="number" name="age" id="age"placeholder="Idade" required>
 			    	</li>
 			    	<li>
-				    	<label for="gender">Sexo </label>
+				    	<label for="gender">Sexo</label>
 				    	<div>
 					    	<input type="radio" name="gender" value="male" checked> Masculino
 					    	<input type="radio" name="gender" value="female"> Feminino
 					    </div>
 				   	</li>
 				   	<li>
-				    	<label for="aerobic">Teste Aeróbico </label>
+				    	<label for="aerobic">Teste Aeróbico</label>
 				    	<div>
 					    	<input type="radio" name="aerobic" value="running" checked> Corrida
 					    	<input type="radio" name="aerobic" value="swimming"> Natação
@@ -57,11 +56,11 @@
 					</li>
 				   	<li id="running">
 			    		<label for="running">Corrida 2.400m</label>
-			    		<input type="time" id="runningTime" name="runningTime" min="00:00" value="00:00">
+			    		<input type="text" id="runningTime" name="runningTime" data-mask="00&rsquo;00&quot;" placeholder="00&rsquo;00&quot;">
 			    	</li>
 			    	<li id="swimming">
 			    		<label for="swimming">Natação 12 minutos</label>
-			    		<input type="number" id="swimmingDistance" name="swimmingDistance" placeholder="Distância percorrida (m)">
+			    		<input type="number" id="swimmingDistance" name="swimmingDistance" placeholder="Distância percorrida (metros)">
 			    	</li>
 			    	<li>
 			    		<label for="abs">Abdominais</label>
@@ -73,15 +72,15 @@
 			    	</li>
 			    	<li id="femalebars">
 			    		<label for="femalebars">Barra Estática</label>
-			    		<input type="time" id="barsTime" name="barsTime" value="00:00">
+			    		<input type="number" id="barsTime" name="barsTime" placeholder="Tempo na barra (segundos)">
 			    	</li>
 			    	<li>
 			    		<label for="fastswimming">Natação 75m</label>
-			    		<input type="time" id="swimmingTime" name="swimmingTime" min="00:00" value="00:00">
+			    		<input type="text" id="swimmingTime" name="swimmingTime" data-mask="0&rsquo;00&quot;" placeholder="0&rsquo;00&quot;">
 			    	</li>
 			    	<li>
 			    		<label for="shuttlerun">Shuttle Run</label>
-			    		<input id="shuttlerunTime" name="shuttlerunTime" type="text" placeholder="00:00" data-mask="00:00">
+			    		<input id="shuttlerunTime" name="shuttlerunTime" type="text" placeholder="00&quot;00" data-mask="00&quot;00">
 			    	</li>
 			    	<li>
         				<button type="button" id="btnCalcular">Calcular</button>
@@ -103,27 +102,27 @@
 			    		</tr>
 			    	</thead>
 			    	<tbody>
-			    		<tr>
+			    		<tr id="aerobic">
 			    			<td id="aerobic_test" class="test-name"></td>
 			    			<td id="aerobic_exec"></td>
 			    			<td id="aerobic_note"></td>
 			    		</tr>
-			    		<tr>
+			    		<tr id="abs">
 			    			<td class="test-name">Abdominais</td>
 			    			<td id="abs_exec"></td>
 			    			<td id="abs_note"></td>
 			    		</tr>
-			    		<tr>
+			    		<tr id="bars">
 			    			<td id="bars_test" class="test-name"></td>
 			    			<td id="bars_exec"></td>
 			    			<td id="bars_note"></td>
 			    		</tr>
-			    		<tr>
+			    		<tr id="swim">
 			    			<td class="test-name">Natação 75m</td>
 			    			<td id="swim_exec"></td>
 			    			<td id="swim_note"></td>
 			    		</tr>
-			    		<tr>
+			    		<tr id="shuttle">
 			    			<td class="test-name">Shuttle Run</td>
 			    			<td id="shuttle_run_exec"></td>
 			    			<td id="shuttle_run_note"></td>
@@ -138,8 +137,6 @@
 			    	<button type="button" id="btnNovoCalculo">Novo Cálculo</button>
 			    </div>
 			</div>
-
-			<footer id="footer">Desenvolvido por Sd Jonatas - NTS/WEB</footer>
 
 		</div>
 
