@@ -45,7 +45,9 @@ $(document).ready(function() {
 
 	$("#btnCalcular").click(function() {
 		if ($("#age").val()) {
-			if ($("#absQtd").val() || $("#swimmingTime").val() || $("#shuttlerunTime").val()) {
+			if ($("#age").val() < 18 || $("#age").val() > 65) {
+				window.alert("Idade inválida!");
+			} else if ($("#absQtd").val() || $("#swimmingTime").val() || $("#shuttlerunTime").val()) {
 				$("#taf_form").submit();
 		 		return;
 			} else if (isSwimming && $("#swimmingDistance").val()) {

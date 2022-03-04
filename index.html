@@ -11,7 +11,7 @@
 		</script>
 
 	    <meta charset="utf-8">
-	   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	    <meta name="description" content="Calculadora TAF">
 	    <meta name="author" content="Jonatas Cavalcante">
 
@@ -32,7 +32,7 @@
 		    		</li>
 		    		<li>
 				    	<label for="age">Idade</label>
-				    	<input type="number" name="age" id="age"placeholder="Idade" required>
+				    	<input type="number" name="age" id="age" placeholder="Idade" min="18" max="65" required>
 			    	</li>
 			    	<li>
 				    	<label for="gender">Sexo</label>
@@ -60,19 +60,21 @@
 			    	</li>
 			    	<li id="swimming">
 			    		<label for="swimming">Natação 12 minutos</label>
-			    		<input type="number" id="swimmingDistance" name="swimmingDistance" placeholder="Distância percorrida (metros)">
+			    		<input type="number" id="swimmingDistance" name="swimmingDistance" placeholder="Distância percorrida (metros)" min="0">
 			    	</li>
 			    	<li>
 			    		<label for="abs">Abdominais</label>
-			    		<input type="number" id="absQtd" name="absQtd" placeholder="Quantidade de abdominais">
+			    		<input type="number" id="absQtd" name="absQtd" placeholder="Quantidade de abdominais"
+			    		min="0">
 			    	</li>
 			    	<li id="malebars">
 			    		<label for="malebars">Barra Dinâmica</label>
-			    		<input type="number" id="barsQtd" name="barsQtd" placeholder="Quantidade de barras">
+			    		<input type="number" id="barsQtd" name="barsQtd" placeholder="Quantidade de barras"
+			    		min="0">
 			    	</li>
 			    	<li id="femalebars">
 			    		<label for="femalebars">Barra Estática</label>
-			    		<input type="number" id="barsTime" name="barsTime" placeholder="Tempo na barra (segundos)">
+			    		<input type="number" id="barsTime" name="barsTime" placeholder="Tempo na barra (segundos)" min="0">
 			    	</li>
 			    	<li>
 			    		<label for="fastswimming">Natação 75m</label>
